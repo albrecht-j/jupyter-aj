@@ -1,0 +1,47 @@
+name: jupyter-aj
+version: 0.0.1
+summary: Testsnap for Jupyter
+title: Jupyter AJ.
+description: 'Simple Webbased Editor
+'
+base: core18
+confinement: strict
+grade: stable
+
+apps:
+  jupyter:
+    command: jupyter-notebook --allow-root --config='$SNAP'
+    daemon: simple
+    plugs:
+      - network-bind
+      - network-status
+      - network-observe
+      - serial-port
+
+parts:
+  jupyter:
+    plugin: python
+    python-version: python3
+    source: .
+    python-packages:
+      - jupyter
+
+  configs:
+    source: ./configs
+    plugin: dump
+    organize:
+      'package-assets/*': package-assets/${SNAPCRAFT_PROJECT_NAME}/
+
+slots:
+  package-assets:
+    interface: content
+    content: package-assets
+    source:
+      read:
+      - $SNAP/package-assets/${SNAPCRAFT_PROJECT_NAME}
+
+plugs:
+  active-solution:
+    interface: content
+    content: solutions
+    target: $SNAP_COMMON/solutions
