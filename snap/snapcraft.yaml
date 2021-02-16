@@ -10,7 +10,7 @@ grade: stable
 
 apps:
   jupyter:
-    command: jupyter-notebook --allow-root --config='$SNAP'
+    command: jupyter-notebook --allow-root --no-browser --config='/snap/jupyter-aj/current/jupyter_notebook_config.py'
     daemon: simple
     plugs:
       - network-bind
