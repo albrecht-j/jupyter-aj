@@ -17,3 +17,6 @@ jupyter is licensed under BSD License (BSD)
 The python package can be found using ```pip install jupyter``` or
 [PyPi](https://pypi.org/project/jupyter/)
 
+## Maintainers
+
+Johannes Albrecht
