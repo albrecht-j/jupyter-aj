@@ -1,6 +1,13 @@
 {
     "$schema": "https://json-schema.boschrexroth.com/ctrlx-automation/ctrlx-core/apps/package-manifest/package-manifest.v1.schema.json",
-    "id": "octoprint-sdev",
+    "id": "jupyter-aj",
+    "services": {
+        "proxyMappings": [{
+            "binding": ":8888",
+            "name": "jupyter-aj.web",
+            "url": "/jupyter"
+        }]
+    },
     "menus": {
         "sidebar": [{
             "id": "jupyter-aj.jupyter",
