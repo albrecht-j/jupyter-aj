@@ -2,7 +2,7 @@
     "$schema": "https://json-schema.boschrexroth.com/ctrlx-automation/ctrlx-core/apps/package-manifest/package-manifest.v1.schema.json",
     "id": "jupyter-aj",
     "services": {
-        "proxyMappings": [{
+        "proxyMapping": [{
             "binding": ":8888",
             "name": "jupyter-aj.web",
             "url": "/jupyter"
