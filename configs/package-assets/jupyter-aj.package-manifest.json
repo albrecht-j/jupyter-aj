@@ -12,7 +12,7 @@
         "sidebar": [{
             "id": "jupyter-aj.jupyter",
             "title": "Jupyter",
-            "link": "http://${hostname}:8888/jupyter",
+            "link": "/jupyter",
             "icon": "bosch-ic-document-edit",
             "target": "jupyter"
         }]
