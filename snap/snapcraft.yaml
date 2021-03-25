@@ -4,6 +4,7 @@ summary: Testsnap for Jupyter
 title: Jupyter AJ.
 description: 'Simple Webbased Editor
 '
+icon: snap/icon/logo.png
 base: core18
 confinement: strict
 grade: stable
