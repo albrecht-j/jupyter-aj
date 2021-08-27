@@ -26,6 +26,8 @@ parts:
     source: .
     python-packages:
       - jupyter
+      - ctrlx-datalayer
+      - ctrlx-fbs
 
   configs:
     source: ./configs
