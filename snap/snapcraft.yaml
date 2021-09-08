@@ -1,9 +1,10 @@
 name: jupyter-aj
-version: 0.0.1
+version: 0.0.2
 summary: Testsnap for Jupyter
 title: Jupyter AJ.
 description: 'Simple Webbased Editor
 '
+icon: snap/icon/logo.png
 base: core18
 confinement: strict
 grade: stable
@@ -25,6 +26,8 @@ parts:
     source: .
     python-packages:
       - jupyter
+      - ctrlx-datalayer
+      - ctrlx-fbs
 
   configs:
     source: ./configs
