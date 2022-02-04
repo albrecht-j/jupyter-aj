@@ -131,3 +131,7 @@ dmypy.json
 
 /.devcontainer/devcontainer.json
 /.devcontainer/Dockerfile
+
+prime/
+stage/
+

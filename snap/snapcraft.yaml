@@ -5,13 +5,13 @@ title: Jupyter AJ.
 description: 'Simple Webbased Editor
 '
 icon: snap/icon/logo.png
-base: core18
+base: core20
 confinement: strict
 grade: stable
 
 apps:
   jupyter:
-    command: jupyter-notebook --allow-root --no-browser --config='/snap/jupyter-aj/current/jupyter_notebook_config.py'
+    command: bin/jupyter-notebook --allow-root --no-browser --config /snap/jupyter-aj/current/jupyter_notebook_config.py
     daemon: simple
     plugs:
       - network-bind
@@ -22,12 +22,12 @@ apps:
 parts:
   jupyter:
     plugin: python
-    python-version: python3
     source: .
     python-packages:
       - jupyter
       - ctrlx-datalayer
       - ctrlx-fbs
+      - numpy
 
   configs:
     source: ./configs
