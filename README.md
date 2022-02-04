@@ -1,7 +1,7 @@
 # jupyter-aj
 This repository provides a snapcraft build for the jupyter project.
 
-## Bosch Rexroth ctrlX CORE Supprt
+## Bosch Rexroth ctrlX CORE Support
 This snap works best with the ctrlX CORE from Bosch Rexroth and is integrated into the environment
 
 ## Build
