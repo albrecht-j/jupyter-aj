@@ -1,5 +1,5 @@
 name: jupyter-aj
-version: 0.0.2
+version: 0.0.3
 summary: Testsnap for Jupyter
 title: Jupyter AJ.
 description: 'Simple Webbased Editor
@@ -18,6 +18,17 @@ apps:
       - network-status
       - network-observe
       - serial-port
+      - active-solution
+
+  jupyterlab:
+    command: jupyterlab
+    daemon: simple
+    plugs:
+      - network-bind
+      - network-status
+      - network-observe
+      - serial-port
+      - active-solution
 
 parts:
   jupyter:
@@ -28,12 +39,26 @@ parts:
       - ctrlx-datalayer
       - ctrlx-fbs
       - numpy
+      - jupyterlab
+      - matplotlib
+      - wheel
+    build-packages:
+      - libzmq3-dev
+      - libsystemd-dev
+
+  deb:
+    plugin: dump
+    source: https://github.com/boschrexroth/ctrlx-automation-sdk/releases/download/1.14.0/ctrlx-datalayer-1.7.13.deb
 
   configs:
     source: ./configs
     plugin: dump
     organize:
       'package-assets/*': package-assets/${SNAPCRAFT_PROJECT_NAME}/
+
+  lab:
+    source: ./lab
+    plugin: dump
 
 slots:
   package-assets:
