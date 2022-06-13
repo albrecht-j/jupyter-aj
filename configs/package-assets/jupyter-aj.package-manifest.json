@@ -25,13 +25,13 @@
                     "id": "jupyter",
                     "link": "/jupyter",
                     "target":"jupyter-aj.web",
-                    "titel": "Jupyter"
+                    "title": "Jupyter"
                 },
                 {
                     "id": "jupyterlab",
                     "link": "/jupyterlab",
                     "target":"jupyterlab-aj.web",
-                    "titel": "Jupyter-Lab"
+                    "title": "Jupyter-Lab"
                 }
             ]
         }]
