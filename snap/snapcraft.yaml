@@ -1,5 +1,5 @@
 name: jupyter-aj
-version: 0.0.3
+version: 0.0.4
 summary: Testsnap for Jupyter
 title: Jupyter AJ.
 description: 'Simple Webbased Editor
@@ -48,7 +48,7 @@ parts:
 
   deb:
     plugin: dump
-    source: https://github.com/boschrexroth/ctrlx-automation-sdk/releases/download/1.14.0/ctrlx-datalayer-1.7.13.deb
+    source: https://github.com/boschrexroth/ctrlx-automation-sdk/releases/download/1.16.0/ctrlx-datalayer-1.8.6.deb
 
   configs:
     source: ./configs
