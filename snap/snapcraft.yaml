@@ -1,5 +1,5 @@
 name: jupyter-aj
-version: 0.0.5
+version: 0.0.6
 summary: Testsnap for Jupyter
 title: Jupyter AJ.
 description: 'Simple Webbased Editor
@@ -74,3 +74,8 @@ plugs:
     interface: content
     content: solutions
     target: $SNAP_COMMON/solutions
+    
+  datalayer:
+    interface: content
+    content: datalayer
+    target: $SNAP_DATA/.datalayer 
