@@ -1,5 +1,5 @@
 name: jupyter-aj
-version: 0.0.6
+version: 0.0.7
 summary: Testsnap for Jupyter
 title: Jupyter AJ.
 description: 'Simple Webbased Editor
@@ -43,9 +43,11 @@ parts:
       - matplotlib
       - wheel
       - pip
+      - opencv-python
     build-packages:
       - libzmq3-dev
       - libsystemd-dev
+      - libgl-dev
 
   deb:
     plugin: dump
