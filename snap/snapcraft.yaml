@@ -46,6 +46,8 @@ parts:
     build-packages:
       - libzmq3-dev
       - libsystemd-dev
+    stage-packages:
+      - python3.10
 
   deb:
     plugin: dump
