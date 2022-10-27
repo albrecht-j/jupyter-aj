@@ -44,7 +44,7 @@ parts:
       - wheel
       - pip
       - scipy
-    build-packages:
+    stage-packages:
       - libzmq3-dev
       - libsystemd-dev
 
